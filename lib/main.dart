@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 const DrawerHeader(child: Text("Menu")),
                 ListTile(
                   title: Text("Home"),
-                  leading: Icon(Icons.home),
+                  leading: Icon(Icons.home, color: const Color(0xFF2D72F6)),
                   onTap:
                       () => setState(() {
                         selectedPage = SelectedPage.home;
@@ -180,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ListTile(
                   title: Text("Cadastrar Paciente"),
-                  leading: Icon(Icons.person_add),
+                  leading: Icon(Icons.person_add, color: const Color(0xFF2D72F6)),
                   onTap:
                       () => setState(() {
                         selectedPage = SelectedPage.newPatient;
@@ -189,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ListTile(
                   title: Text("Nova Consulta"),
-                  leading: Icon(Icons.assignment_add),
+                  leading: Icon(Icons.assignment_add, color: const Color(0xFF2D72F6)),
                   onTap:
                       () => setState(() {
                         selectedPage = SelectedPage.newAppointment;
@@ -198,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ListTile(
                   title: Text("Consultas"),
-                  leading: Icon(Icons.access_time),
+                  leading: Icon(Icons.access_time, color: const Color(0xFF2D72F6)),
                   onTap:
                       () => setState(() {
                         selectedPage = SelectedPage.appointments;
@@ -207,7 +207,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ListTile(
                   title: Text("Relatório"),
-                  leading: Icon(Icons.report),
+                  leading: Icon(Icons.report, color: const Color(0xFF2D72F6)),
                   onTap:
                     () => setState(() {
                       selectedPage = SelectedPage.reportScreen;
@@ -216,7 +216,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ListTile(
                   title: Text("Sair"),
-                  leading: Icon(Icons.exit_to_app),
+                  leading: Icon(Icons.exit_to_app, color: const Color(0xFF2D72F6)),
                   onTap: () => setState(() {
                     appState.loggedUser = null;
                     Scaffold.of(context).closeDrawer();
